@@ -1,0 +1,109 @@
+/*usando variaveis,declarando ela pelo root para usar cores durante o codigp*/
+:root{
+    --vermelho:#E50914;
+    --preto:#000000;
+    --branco:#FFFFFF;
+    --cinza:rgb(134, 134, 134);
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;/*não deixa que os elementos saia da "caixa" do site */ 
+}
+
+                                  /*cabeçalho do site*/
+body{
+    background-color:var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+}
+/*logo da netflix*/
+.logo{
+    color: var(--vermelho);
+    font-family: "Arial Black",Times;
+    font-size: 40px;
+    margin-left: 5px;
+}
+/*links do navegador*/
+header nav a{
+    text-decoration: none;
+    color: var(--cinza);
+    margin-right: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*efeito nos links*/
+header nav a:hover{
+    color: whitesmoke;
+}
+/*caixa container assim ficara respansivel e usavel a varias divs*/
+header div.container{
+    display: flex;/*eleva a div criada pra cima e no canto direito*/
+    flex-direction: row;/*padrão do flexbox deixando como linha*/
+    align-items: center;/*centro da div*/
+    justify-content: space-between;/*cria espaço entre elementos horinzoltamente de modo justicado*/
+
+}
+
+                         /*conteúdo principal*/
+/*filme principal*/
+.filme-principal{
+    height: 400px;
+    font-size: 16px;
+    /*fundo tmb com degradê da cor preta*/
+    background:linear-gradient(rgba(0,0,0,.50),rgba(0, 0, 0, .50)100%), url(/img/capa-house.jpg);/*fundo é a imagem*/
+    /*ajustar img*/
+    background-size: cover;/*a img se encaixa na div*/
+
+    display: flex;
+    flex-direction: column;/*deixando como coluna*/
+    justify-content:center ;
+    align-items: flex-start;/*como estar container center e coluna os elementos fica agora alinhado no inicio*/
+
+
+}
+/*titulos e descricoes*/
+.filme-principal .descricao{
+    margin-bottom: 90px ;
+    font-family:  Helvetica, sans-serif;
+}
+.filme-principal .titulo{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.botao{
+    background-color: rgba(0, 0, 0, .40);
+    border: none;
+    color: var(--branco);
+    padding: 12px;
+    border-radius: 3px;
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: 0.3s ease all;/*propriedade que devide modo e tempo de transição de uma animação a outra simples*/
+}
+.botao:hover{
+   background-color: var(--branco);
+   color: var(--preto);
+}
+.filme-principal .container{
+    width: 70%; /*conteudo ate 70% da pag*/
+    margin-left: 6px;
+}
+/*icones*/
+.botao i{
+    margin-right: 5px;
+}
+
+                   /*carrosseil*/
+/*imgs*/                 
+.box-filmes{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.carrossel-filmes{
+    margin-top: 5px;
+}
