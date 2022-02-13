@@ -3,3 +3,68 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
+header{
+    color: red;
+    display: flex;
+    justify-content: start;
+}
+h1{
+    margin-left: 2rem;
+    margin-top: 1.3rem;
+}
+body{
+    background-color: rgba(0, 0, 0, 0.603);
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+.flex{
+    padding: 3rem;
+    background-color: rgba(8, 7, 7, 0.562);
+    color: white;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+form input{
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: rgba(82, 81, 80, 0.582);
+}
+form button{
+    padding: 0.7rem;
+    background-color: red;
+    border: none;
+    margin-bottom: 0.3rem;
+    color: white;
+    font-size: medium;
+}
+label{
+    font-size: small;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: small;
+    
+}
+#ajuda{
+    margin-left: 2.4rem;
+}
+div.mais{
+    margin-top: 10rem;
+    width: 52%;
+    
+}
+#acesse{
+    margin-left: 0.2rem;
+}
+
