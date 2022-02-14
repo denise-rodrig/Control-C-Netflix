@@ -13,7 +13,8 @@ h1{
     margin-top: 1.3rem;
 }
 body{
-    background-color: rgba(0, 0, 0, 0.603);
+   
+    background-image: url(/Control-C-Netflix/img/netflix-library.jpg);
 }
 main{
     display: flex;
@@ -21,12 +22,12 @@ main{
 }
 .flex{
     padding: 3rem;
-    background-color: rgba(8, 7, 7, 0.562);
+    background-color: rgba(8, 7, 7, 0.795);
     color: white;
     flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
-    
+    border-radius: 7px;
 }
 form{
     display: flex;
@@ -38,6 +39,7 @@ form input{
     margin-bottom: 1rem;
     border: none;
     background-color: rgba(82, 81, 80, 0.582);
+    border-radius: 3px;
 }
 form button{
     padding: 0.7rem;
@@ -46,18 +48,31 @@ form button{
     margin-bottom: 0.3rem;
     color: white;
     font-size: medium;
+    cursor: pointer;
+    border-radius: 3px;
 }
 label{
     font-size: small;
+    color: rgb(160, 158, 158);
+
+}
+#lembra{
+    color: rgb(160, 158, 158);
+    cursor: pointer;
 }
 a{
-    color: white;
-    text-decoration: none;
+    color: rgb(160, 158, 158);
+    text-decoration:none;
     font-size: small;
+    cursor: pointer;
     
 }
 #ajuda{
     margin-left: 2.4rem;
+}
+a:hover{
+    text-decoration:underline ;
+    color: white;
 }
 div.mais{
     margin-top: 10rem;
@@ -66,5 +81,6 @@ div.mais{
 }
 #acesse{
     margin-left: 0.2rem;
+    color: rgb(233, 231, 231);
 }
 
