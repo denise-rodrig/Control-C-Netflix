@@ -40,6 +40,7 @@ form input{
     border: none;
     background-color: rgba(82, 81, 80, 0.582);
     border-radius: 3px;
+    color: white;
 }
 form button{
     padding: 0.7rem;
